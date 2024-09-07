@@ -51,7 +51,7 @@ async def crear_tarea(task: Task, current_user: User = Depends(get_current_user)
     if not recipient_email:
         raise HTTPException(status_code=404, detail="Correo electrónico del usuario no encontrado")
     msg = EmailMessage()
-    msg.set_content(f"Se pudo crear correctamente su tarea: {tarea["task"]}")
+    msg.set_content(f'Se pudo crear correctamente su tarea: {tarea["task"]}')
     msg["subject"] = "Creacion de Tarea en su Task Manager"
     msg["to"] = recipient_email
     user = "gola2010sa@gmail.com"
