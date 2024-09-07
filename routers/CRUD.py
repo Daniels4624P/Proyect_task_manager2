@@ -5,7 +5,7 @@ from db.models.models import Task, User, TASK_STATES
 from db.schemas.schemas import user_schema,users_schema,task_schema,tasks_schema
 from routers.autenticacion import get_current_user
 from email.message import EmailMessage
-import smtplib
+from smtplib import SMTP
 from fastapi.templating import Jinja2Templates
 from templates.templates import templates
 
@@ -58,7 +58,7 @@ async def crear_tarea(task: Task, current_user: User = Depends(get_current_user)
     msg["from"] = user
     password = "yvammjotufcmquai"
     try:
-        server = smtplib.SMTP("smtp.gmail.com", 587)
+        server = SMTP("smtp.gmail.com", 587)
         server.starttls()
         server.login(user, password)
         server.send_message(msg)
