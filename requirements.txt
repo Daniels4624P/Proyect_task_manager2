@@ -1,0 +1,10 @@
+fastapi
+python-jose
+passlib
+pymongo
+python-multipart
+uvicorn
+jose
+pydantic
+datetime
+smtplib
