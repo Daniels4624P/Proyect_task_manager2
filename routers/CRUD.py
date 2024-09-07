@@ -64,7 +64,7 @@ async def crear_tarea(task: Task, current_user: User = Depends(get_current_user)
         server.send_message(msg)
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error al enviar el correo: {e}")
-    return f"tarea creada y correo enviado, tarea: {tarea["task"]}"
+    return f'tarea creada y correo enviado, tarea: {tarea["task"]}'
 
 @router.put("/actualizar_tarea/{id}")
 async def actualizar_tarea(id: str, task: Task, current_user: User = Depends(get_current_user)):
