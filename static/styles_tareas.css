@@ -1,0 +1,14 @@
+body {
+    text-align: center;
+    background-color: azure;
+    font-family: Arial, sans-serif;;
+}
+
+h1 {
+    text-align: center;
+}
+
+.task-list {
+    background-color: aliceblue;
+    text-align: center;
+}

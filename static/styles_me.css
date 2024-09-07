@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    background-color: azure;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-style: inherit;
+}
+
+button {
+    background-color: #007bff;  /* Color de fondo */
+    color: white;               /* Color del texto */
+    padding: 10px 20px;         /* Relleno alrededor del texto */
+    border: none;               /* Sin bordes */
+    border-radius: 4px;         /* Bordes redondeados */
+    cursor: pointer;            /* Cursor en forma de mano */
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;  /* Color de fondo al pasar el ratón */
+}
