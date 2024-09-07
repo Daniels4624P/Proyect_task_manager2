@@ -10,3 +10,4 @@ datetime
 requests
 pandas
 pyjwt
+jinja2
