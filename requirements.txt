@@ -8,3 +8,5 @@ jose
 pydantic
 datetime
 smtplib
+requests==2.28.1
+pandas==1.4.3
